@@ -13,8 +13,7 @@ RUN mvn package
 #
 # Run
 #
-#FROM openjdk:8-jre-alpine3.9
-FROM openjdk:17-alpine
+FROM openjdk:8-jre-alpine3.9
 
 EXPOSE 8080
 
@@ -37,4 +36,3 @@ CMD [ "java", "-Xmn256m", "-Xmx768m", "-jar", "shipping.jar" ]
 # RUN mvn package
 # RUN mv /opt/shipping/target/shipping-1.0.jar shipping.jar
 # CMD [ "java", "-Xmn256m", "-Xmx768m", "-jar", "shipping.jar" ]
-
