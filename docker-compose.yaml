@@ -1,7 +1,8 @@
+version: '3.8'
+name: roboshop
 networks:
   default:
-    external:
-      name: roboshop
+    name: roboshop
 volumes:
   mongodb: #docker volume create mongodb
   redis:
