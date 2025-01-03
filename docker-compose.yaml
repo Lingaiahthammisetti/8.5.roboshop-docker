@@ -72,9 +72,15 @@ services:
 
   shipping:
     image: shipping:v1
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
     container_name: shipping
     depends_on:
     - mysql
+
+
 
   rabbitmq:
     container_name: rabbitmq
