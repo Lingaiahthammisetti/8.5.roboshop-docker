@@ -77,10 +77,9 @@ services:
         soft: 65536
         hard: 65536
     container_name: shipping
+    command: sh -c "sleep 60"
     depends_on:
     - mysql
-
-
 
   rabbitmq:
     container_name: rabbitmq
