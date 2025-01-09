@@ -49,8 +49,6 @@
 			<version>8.0.28</version> <!-- Ensure you use the latest version -->
 		</dependency>
 
-
-
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
