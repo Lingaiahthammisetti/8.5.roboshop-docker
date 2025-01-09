@@ -1,3 +1,5 @@
+
+
 CREATE DATABASE IF NOT EXISTS cities;
 
 use cities;
