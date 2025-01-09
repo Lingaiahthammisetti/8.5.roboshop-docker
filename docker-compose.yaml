@@ -80,7 +80,7 @@ services:
     #command: sh -c "sleep 300"
     depends_on:
     - mysql
-    command: sh -c "wait-for-it mysql:3306 --timeout=300 -- sh -c 'sleep 300 && your_shipping_service_command'"
+    #command: sh -c "wait-for-it mysql:3306 --timeout=300 -- sh -c 'sleep 300 && your_shipping_service_command'"
 
   rabbitmq:
     container_name: rabbitmq
