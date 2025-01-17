@@ -72,15 +72,14 @@ services:
 
   shipping:
     image: shipping:v1
-    ulimits:
-      nofile:
-        soft: 65536
-        hard: 65536
+    # ulimits:
+    #   nofile:
+    #     soft: 65536
+    #     hard: 65536
     container_name: shipping
-    #command: sh -c "sleep 300"
+    command: sh -c "sleep 20 && node /opt/shipping/shipping.jar"
     depends_on:
     - mysql
-    #command: sh -c "wait-for-it mysql:3306 --timeout=300 -- sh -c 'sleep 300 && your_shipping_service_command'"
 
   rabbitmq:
     container_name: rabbitmq
